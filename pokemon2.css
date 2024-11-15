@@ -5,14 +5,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
-/*Define as cores para todo o site*/
+/* Define as cores para todo o site */
 :root{
-    /* Define variaveis */
-    --primary-color: #f5cf06;
-    --secondary-color: #8e4106;
-
+    /* Define variaveis no css */
+    --primary-color:#4e06f5;
+    --secondary-color:#e6a42a;
 }
 body{
     height: 100vh;
@@ -20,7 +18,6 @@ body{
     display: flex;
     flex-direction: column;
     font-family: 'Righteous', cursive;
-
 }
 .container{
     height: 100%;
@@ -28,11 +25,9 @@ body{
     grid-template-columns: repeat(12, 1fr);
     width: 90vw;
     margin: auto;
-
 }
 header{
     margin-top: 70px;
-
 }
 header a{
     grid-column: 1/-1;
@@ -42,11 +37,9 @@ header a{
     text-decoration: none;
     color: var(--secondary-color);
     font: 2rem;
-
 }
 main{
     flex-grow: 1;
-
 }
 .title{
     position: relative;
@@ -56,37 +49,30 @@ main{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 .title_text{
     font-size: 20vw;
     color: #fff;
-
-
 }
 .title_transparent{
     position: absolute;
-    top: -50%;
+    top:-50%;
     font-size: 27vw;
     color: #fff5;
     z-index: -1;
-
 }
 .description{
     grid-column: 1/7;
     place-self: start;
     color: var(--secondary-color);
     z-index: 1;
-
 }
 .description_title{
     font-size: 4rem;
-
 }
 .description_text{
     width: 500px;
     font-size: 1.2rem;
-
 }
 .action{
     grid-column: 7/-1;
@@ -101,7 +87,6 @@ main{
     justify-content: center;
     align-items: center;
     z-index: 1;
-
 }
 .footer_text{
     grid-column: 1/-1;
@@ -109,36 +94,30 @@ main{
     margin-bottom: 24px;
     color: var(--secondary-color);
     font-size: 1rem;
-    
 }
-.lunalu_image{
+.lunalu-image{
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-
 }
-/* Responsabilidade para tablet*/
-@media(max-width: 800px){
+/* Responsividade para tablet */
+@media(max-width:800px){
     .container{
         grid-template-columns: 1fr;
-
     }
     header{
         margin-top: 30px;
-
     }
     .title{
         place-self: start center;
         transform: translateY(20%);
-
     }
     .description{
         grid-column: 1;
         grid-row: 2;
         place-self: center;
         text-align: center;
-
     }
     .action{
         grid-column: 1;
@@ -146,29 +125,24 @@ main{
         place-self: end center;
         margin-bottom: 24px;
     }
-    .footer{
+    footer{
         display: none;
-
     }
 }
-/* Responsividade para celular*/
+/* Responsividade para celular */
 @media(max-width:400px){
     .description_title{
         padding-top: 230px;
         font-size: 7vw;
-        
     }
     .description_text{
         display: none;
-
     }
     .action{
         width: 100%;
         font-size: 7vw;
-
     }
-    .lunalu_image{
+    .lunalu-image{
         width: 90vw;
-
     }
 }
